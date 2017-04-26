@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 // Import components ==============================
 //compnents here
+var cookReviews = require("./components/cookReviews");
 
 //=================================================
 
@@ -16,6 +17,7 @@ export default class App extends Component {
       <div>
         <h1> TEST HELLO </h1>
         {this.props.children}
+        <cookReviews/>
       </div>
     );
   }

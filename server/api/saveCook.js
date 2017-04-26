@@ -18,7 +18,7 @@ const saveCook = function(req, res) {
         if (error) {
             res.send(error);
         } else {
-            res.send(doc);
+            User.findOneAndUpdate
         }
     });
 

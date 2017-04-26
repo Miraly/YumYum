@@ -3,6 +3,7 @@
 
 const cooksByZip = require('./cooksByZip.js');
 const getFooditemsByCook=require('./getFooditemsByCook.js');
+// const getFooditemsByCuisine=require('./getFooditemsByCuisine.js');
 
 const saveCook=require('./saveCook.js');
 const saveFood=require('./saveFood.js');
@@ -16,6 +17,7 @@ module.exports = function(app) {
 	//get routes
 	app.get("/cook/:zip", cooksByZip);
 	app.get("/fooditem/:id", getFooditemsByCook);
+	// app.get("/fooditem/:cuisine", getFooditemsByCuisine);
 
 
 	//post routes
@@ -26,6 +28,9 @@ module.exports = function(app) {
 	//update routes
 	app.post("/addReview/:id",addReview);
 	app.post("/addStars/:id",addStars);
+
+
+	//query to get 
 
 }
 
