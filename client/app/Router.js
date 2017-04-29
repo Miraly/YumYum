@@ -31,7 +31,7 @@ module.exports = (
               <Route path="customer-dash" component={CustomerDash}>
                 <Route path="" component={FilterPage} />
                 <Route path="" component={CookDetails} />
-              <Route/>
+              </Route>
 
               <IndexRoute component={CustomerDash} />
             </Route>
