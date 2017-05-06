@@ -24,7 +24,7 @@ const decreaseCartItem = require('./decreaseCartItem')
 module.exports = function(app) {
 	//get routes
 	app.get("/cook/:zip", cooksByZip);
-	app.get("/fooditem/:id", getFooditemsByCook);
+	app.get("/fooditems/:id", getFooditemsByCook);
 	app.get("/fooditem/:cuisine", getFooditemsByCuisine);
 	app.get("/topFooditems", getBestFooditems);
 
